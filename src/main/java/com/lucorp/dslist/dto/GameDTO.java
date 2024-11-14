@@ -7,7 +7,6 @@ public class GameDTO {
   private Long id;
   private String title;
   private Integer year;
-  private String imgUrl;
   private String shortDescription;
 
   public GameDTO() {
@@ -17,7 +16,6 @@ public class GameDTO {
     id = game.getId();
     title = game.getTitle();
     year = game.getYear();
-    imgUrl = game.getImgUrl();
     shortDescription = game.getShortDescription();
   }
 
@@ -31,10 +29,6 @@ public class GameDTO {
 
   public Integer getYear() {
     return year;
-  }
-
-  public String getImgUrl() {
-    return imgUrl;
   }
 
   public String getShortDescription() {
