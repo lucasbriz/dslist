@@ -1,6 +1,7 @@
 package com.lucorp.dslist.dto;
 
 import com.lucorp.dslist.entities.Game;
+import com.lucorp.dslist.projections.GameMinProjection;
 
 public class GameDTO {
 
@@ -17,6 +18,13 @@ public class GameDTO {
     title = game.getTitle();
     year = game.getYear();
     shortDescription = game.getShortDescription();
+  }
+
+  public GameDTO(GameMinProjection gameMinProjection) {
+    id = gameMinProjection.getId();
+    title = gameMinProjection.getTitle();
+    year = gameMinProjection.getYear();
+    shortDescription = gameMinProjection.getShortDescription();
   }
 
   public Long getId() {
