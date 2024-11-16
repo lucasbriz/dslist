@@ -1,0 +1,11 @@
+- h2: http://localhost:8080/h2-console
+- uses docker-compose up
+- pg admin on localhost:5050
+- configure new server:
+  - name: postgres-local-docker
+  - connection: 
+    - host name: pg-docker
+    - port: 5432
+    - maintenance: mydatabase
+    - username: postgres
+    - password: same used on docker file
