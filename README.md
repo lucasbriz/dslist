@@ -9,3 +9,12 @@
     - maintenance: mydatabase
     - username: postgres
     - password: same used on docker file
+
+- create table on PG admin:
+  - get queries from create.sql;
+  - create database on pg admin with the same name used on application-dev;
+  - dslist > schemas > tables > query tool > paste copied query
+
+- test dev:
+  - change application.yaml active to dev
+  - uncomment lines 12 to 15 on application-dev.yaml
